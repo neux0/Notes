@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l446q2rul564ZMwImrQPnFwps4sbEsi24X3BPvoew+mivzVgD/6vswbRDgBlft+c00PFiw4qBf+tyI4jgaVBJw==",
+  "dgSpecHash": "bCphKgO4etr3YNImCpc3AA8AZh0qgTbidOYKLuJ+rHKdvUJm+6ZpgywafxC/r01riQPfNQtKMKbtJTN9i7ebEQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\xea\\Desktop\\Notes\\NotesAPI\\NotesAPI.csproj",
+  "projectFilePath": "C:\\Users\\xea\\Documents\\GitHub\\Notes\\NotesAPI\\NotesAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\xea\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.1\\microsoft.data.sqlite.core.7.0.1.nupkg.sha512",
     "C:\\Users\\xea\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.1\\microsoft.entityframeworkcore.7.0.1.nupkg.sha512",

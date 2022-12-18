@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\xea\\Desktop\\Notes\\NotesAPI\\NotesAPI.csproj": {}
+    "C:\\Users\\xea\\Documents\\GitHub\\Notes\\NotesAPI\\NotesAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\xea\\Desktop\\Notes\\NotesAPI\\NotesAPI.csproj": {
+    "C:\\Users\\xea\\Documents\\GitHub\\Notes\\NotesAPI\\NotesAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\xea\\Desktop\\Notes\\NotesAPI\\NotesAPI.csproj",
+        "projectUniqueName": "C:\\Users\\xea\\Documents\\GitHub\\Notes\\NotesAPI\\NotesAPI.csproj",
         "projectName": "NotesAPI",
-        "projectPath": "C:\\Users\\xea\\Desktop\\Notes\\NotesAPI\\NotesAPI.csproj",
+        "projectPath": "C:\\Users\\xea\\Documents\\GitHub\\Notes\\NotesAPI\\NotesAPI.csproj",
         "packagesPath": "C:\\Users\\xea\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\xea\\Desktop\\Notes\\NotesAPI\\obj\\",
+        "outputPath": "C:\\Users\\xea\\Documents\\GitHub\\Notes\\NotesAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\xea\\AppData\\Roaming\\NuGet\\NuGet.Config",
