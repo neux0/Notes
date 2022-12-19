@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
@@ -30,6 +30,7 @@ namespace NotesAPI.Controllers
                 Visible = reader.GetBoolean(3),
                 Date = DateTime.Parse(reader.GetString(4))
             });
+            con.Close();
             return Ok(notes);
         }
         [HttpGet]
@@ -51,6 +52,7 @@ namespace NotesAPI.Controllers
                    Date = DateTime.Parse(reader.GetString(4)) 
                 });
             }
+            con.Close();
             return Ok(notes);
         }
         [HttpPost]
@@ -69,12 +71,12 @@ namespace NotesAPI.Controllers
             return Ok();
         }
         [HttpPut]
-        public IActionResult Put(Guid guid, NotePutted note)
+        public IActionResult Put(Guid id, NotePutted note)
         {
             con.Open();
             SqliteCommand cmd = con.CreateCommand();
             cmd.CommandText = "UPDATE Notes SET Title = @title, Content = @content, Visible = @visible, Date = @date WHERE ID = @id";
-            cmd.Parameters.AddWithValue("id", guid.ToString());
+            cmd.Parameters.AddWithValue("id", id.ToString());
             cmd.Parameters.AddWithValue("title", note.Title);
             cmd.Parameters.AddWithValue("content", note.Content);
             cmd.Parameters.AddWithValue("visible", note.Visible);
@@ -84,12 +86,12 @@ namespace NotesAPI.Controllers
             return Ok();
         }
         [HttpDelete]
-        public IActionResult Delete(Guid guid)
+        public IActionResult Delete(Guid id)
         {
             con.Open();
             SqliteCommand cmd = con.CreateCommand();
             cmd.CommandText = "DELETE FROM Notes WHERE ID = @id";
-            cmd.Parameters.AddWithValue("id",guid.ToString());
+            cmd.Parameters.AddWithValue("id",id.ToString());
             cmd.ExecuteNonQuery();
             con.Close();
             return Ok();
